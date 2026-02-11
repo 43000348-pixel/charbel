@@ -1,0 +1,23 @@
+body{background-image: url(flag_of_Lebanon.svg.png);
+background-size: 91%}
+
+
+p{
+	color: red;
+	background-color:orange ;
+	font-family: arial;
+}
+h2{
+	color: green;
+}
+.special{
+	background-color: pink;
+}
+
+div{
+	border: 5px blueviolet solid;
+	border-radius: 25px;
+	width: 270px;
+	height: 300px;
+}
+
