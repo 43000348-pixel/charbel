@@ -1,0 +1,66 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* FOND VERT ANIMÉ */
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #1faa59, #2ecc71, #27ae60, #16a085);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Animation du fond */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* STYLE DU TITRE */
+h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+    animation: slideDown 1s ease forwards;
+}
+
+/* Animation titre */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* STYLE DES LIENS (MENU) */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 25px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    width: 200px;
+}
+
+/* Effet au survol */
+a:hover {
+    background: #ffffff;
+    color: #27ae60;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
